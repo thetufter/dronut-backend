@@ -1,0 +1,30 @@
+version: '3.5'
+services:
+  broker:
+    container_name: broker
+    restart: always
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    command: sh -c "rabbitmq-plugins enable rabbitmq_management; rabbitmq-server"
+    
+  backend:
+    container_name: backend
+    build: .
+    image: python:3.8-bullseye
+    ports:
+      - "8000:8000"
+    command: python3 manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - broker
+  
+  consumer:
+    container_name: consumer
+    build: .
+    image: python:3.8-bullseye
+    command: python3 manage.py consume_new_donut_orders
+    links:
+      - backend
+    depends_on:
+      - broker

@@ -1,0 +1,42 @@
+[
+    {
+      "model": "donuts.donut",
+      "pk": "50ca2a91-49c6-46b1-85db-a9d1d883c3bf",
+      "fields": {
+        "donut_code": "abc_original",
+        "name": "Original Donut",
+        "description": "Original glazed donut. Heat up or eat as is! The family will love it.",
+        "price_per_unit": 3.50
+      }
+    },
+    {
+        "model": "donuts.donut",
+        "pk": "9cbd8b44-fcbd-4ecd-9461-9387d714c941",
+        "fields": {
+          "donut_code": "abc_chocolate",
+          "name": "Chocolate Donut",
+          "description": "Moist and fluffy baked chocolate donuts full of chocolate flavor.",
+          "price_per_unit": 6.00
+        }
+    },
+    {
+        "model": "donuts.donut",
+        "pk": "246ec872-e445-4348-af85-60e7ae74ce2a",
+        "fields": {
+          "donut_code": "xyz_chocolate",
+          "name": "Premium Chocolate Donut",
+          "description": "Covered in a thick, chocolate glaze, these are perfect for any chocoholic.",
+          "price_per_unit": 7.00
+        }
+    },
+    {
+        "model": "donuts.donut",
+        "pk": "429ea2a1-5b55-4e73-9622-f0d8e86f5dfa",
+        "fields": {
+          "donut_code": "xyz_caramel",
+          "name": "Premium Caramel Donut",
+          "description": "Filled with a creamy brown sugar custard and topped with caramel icing.",
+          "price_per_unit": 7.50
+        }
+    }
+]

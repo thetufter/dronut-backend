@@ -1,0 +1,54 @@
+[
+    {
+      "model": "orders.order",
+      "pk": 1,
+      "fields": {
+        "customer_name": "Max Brown",
+        "status": 1
+      }
+    },
+    {
+        "model": "orders.order",
+        "pk": 2,
+        "fields": {
+          "customer_name": "John Smith",
+          "status": 0
+        }
+      },
+    {
+        "model": "orders.orderline",
+        "pk": 1,
+        "fields": {
+          "order_id": 1,
+          "donut_id": "50ca2a91-49c6-46b1-85db-a9d1d883c3bf",
+          "quantity": 2
+        }
+    },
+    {
+        "model": "orders.orderline",
+        "pk": 2,
+        "fields": {
+          "order_id": 1,
+          "donut_id": "246ec872-e445-4348-af85-60e7ae74ce2a",
+          "quantity": 1
+        }
+    },
+    {
+        "model": "orders.orderline",
+        "pk": 3,
+        "fields": {
+          "order_id": 2,
+          "donut_id": "246ec872-e445-4348-af85-60e7ae74ce2a",
+          "quantity": 1
+        }
+    },
+    {
+        "model": "orders.orderline",
+        "pk": 4,
+        "fields": {
+          "order_id": 2,
+          "donut_id": "429ea2a1-5b55-4e73-9622-f0d8e86f5dfa",
+          "quantity": 4
+        }
+    }
+]
