@@ -1,0 +1,11 @@
+.DS_Store
+.env
+venv
+
+### Django ###
+*.log
+*.pot
+__pycache__
+*.pyc
+*.py[co]
+local_settings.py
